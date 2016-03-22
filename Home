@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OpenTrip</title>
+	<link href="style.css" rel="stylesheet"></link>
+</head>
+<body>
+	<div class="main">
+		<h2 id="opentrip">OpenTrip</h2>
+<p><strong>This is the official website of the OpenTrip project.</strong></p>
+<p>OpenTrip (a.k.a. TripML) is an open protocol for sharing trip data among carpooling and other transit services. It is currently in the planning stages of development.</p>
+<p>Anyone interested in discussing technical details and development of OpenTrip are welcome to join the <a href="http://groups.google.com/group/api-design-tripml">API Design TripML</a> Google Group. Please state why you'd like to join when requesting to be added to the group, then it may take at least a day for someone to add you.</p>
+<p>A similar website ending in .org is <em>not</em> affiliated with this effort.</p>
+<h3 id="status">Status</h3>
+<p><em>The OpenTrip project is no longer in development at this time.</em></p>
+<p>A working OpenTrip feed producer, consumer, and search engine was developed for <a href="http://511.org">511.org</a> in 2009 but was placed on hold. This is the only known working implementation of OpenTrip.</p>
+<h3 id="for-developers">For Developers</h3>
+<h4 id="specifications">Specifications</h4>
+<ul>
+<li><a href="OpenTrip_Core">OpenTrip Core 0.1 (Draft 1)</a> - <em>updated 2/17/2009</em></li>
+</ul>
+<h4 id="documentation">Documentation</h4>
+<ul>
+<li><a href="OpenTrip_2011mar23.pdf">OpenTrip Presentation PDF</a> - <em>updated 3/23/2011</em></li>
+<li><a href="https://web.archive.org/web/20120623232748/http://headwayblog.com/wiki/index.php?title=TripML">Original TripML Wiki at Headway</a></li>
+</ul>
+<h3 id="other-links">Other Links</h3>
+<ul>
+<li><a href="https://web.archive.org/web/20130526160003/http://dycapo.org/">Dycapo: Dynamic Carpool Project</a> - Open-source work inspired by OpenTrip.</li>
+<li><a href="http://dynamicridesharing.org/">DynamicRidesharing.org</a> - Information on past and current dynamic ridesharing systems.</li>
+<li><a href="http://ridesharechoices.scripts.mit.edu/home/">MIT Real-Time Rideshare Research</a> - Good source of info and site of the <em>2009 Real-Time Rides Workshop</em>.</li>
+</ul>
+<h3 id="background">Background</h3>
+<p>In early 2008 a few transit developers and enthusiasts met and talked at <a href="http://barcamp.org/TransitCampBayArea">TransitCamp Bay Area</a>. At that meeting we began discussing the need to share trip data among rideshare and other services. For this to work we would need to develop an open protocol for communicating carpool data. We originally called this new proposed protocol TripML, and later renamed it to OpenTrip to better reflect the open-source nature of what we would like to accomplish.</p>
+<h3 id="contact">Contact</h3>
+<p>This website and the OpenTrip protocol is maintained by <a href="http://carl.gorringe.org">Carl Gorringe</a>.</p>
+	</div>
+</body>
+</html>

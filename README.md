@@ -10,8 +10,8 @@ This is a copy of the [opentrip.info](http://opentrip.info) website, which docum
 #### Notes on transition to new website
 
 * Use [Pandoc](http://pandoc.org) to convert MediaWiki markup to Markdown:
-    - pandoc -f markdown_github -t html --template=template.html  < Home.md > Home
-    - pandoc -f markdown_github -t html --template=template.html  < OpenTrip_Core.md > OpenTrip_Core
+    - pandoc -f markdown_github -t html --template=template.html  < Home.md > Home.html
+    - pandoc -f markdown_github -t html --template=template.html  < OpenTrip_Core.md > OpenTrip_Core.html
 
 * Apply rewrite rules to redirect links on web server:
     - /wiki/OpenTrip_Core  -->  /OpenTrip_Core

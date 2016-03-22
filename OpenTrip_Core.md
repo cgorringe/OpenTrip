@@ -18,7 +18,7 @@ OpenTrip is a group of specifications for the interchange of travel information 
   <dt>OpenTrip Ping</dt>
   <dd>Method of pinging feed consumers of updated feeds.</dd>
   <dt>OpenTrip Search</dt>
-  <dd>Uses [OpenSearch](http://www.opensearch.org) to return an OpenTrip Core feed.</dd>
+  <dd>Uses <a href="http://www.opensearch.org">OpenSearch</a> to return an OpenTrip Core feed.</dd>
   <dt>OpenTrip Dynamic</dt>
   <dd>Extensions for supporting Dynamic Carpooling applications.</dd>
 </dl>
@@ -40,7 +40,7 @@ The XML Namespaces URI for the XML data formats described in this specification 
 
 <dl>
   <dt>Date</dt>
-  <dd>A Date in OpenTrip is specified by [RFC3339](http://tools.ietf.org/html/rfc3339), the same used in the Atom Syndication Format. See [RFC4287 section 3.3](http://tools.ietf.org/html/rfc4287#section-3.3).
+  <dd>A Date in OpenTrip is specified by <a href="http://tools.ietf.org/html/rfc3339">RFC3339</a>, the same used in the Atom Syndication Format. See <a href="http://tools.ietf.org/html/rfc4287#section-3.3">RFC4287 section 3.3</a>.
   </dd>
 </dl>
 
@@ -69,7 +69,7 @@ This is the basic framework of an Atom feed:
      entry elements
   </entry>
   ...
-  </feed>
+</feed>
 ```
 
 An "entry" in a OpenTrip feed represents a single *Trip*. A feed is composed of a collection of *Trips*.
@@ -130,7 +130,7 @@ An "entry" in a OpenTrip feed represents a single *Trip*. A feed is composed of 
       <t:lic>ABCD123</t:lic>
     </t:mode>
   </entry>
-  </feed>
+</feed>
 ```
 
 
@@ -174,7 +174,7 @@ All Atom elements may be used in a OpenTrip feed, since it is also an Atom feed.
 
 #### The "atom:updated" Element
   
-`Atom:feed` elements MUST contain exactly one `atom:updated` element. The `atom:updated` element is a [Date](#Glossary) construct indicating the most recent instant in time when a feed was last modified.
+`Atom:feed` elements MUST contain exactly one `atom:updated` element. The `atom:updated` element is a [Date](#glossary) construct indicating the most recent instant in time when a feed was last modified.
 
 
 #### The "atom:author" Element
@@ -205,7 +205,7 @@ The `atom:entry` element represents an individual entry, acting as a container f
   <author> ... </author>
   <t:prefs> ... </t:prefs>
   <t:mode> ... </t:mode>
-  </entry>
+</entry>
 ```
 
 
@@ -244,17 +244,17 @@ Example of a valid OpenTrip ID:
 
 #### The "atom:published" Element
   
-`Atom:entry` elements MUST NOT contain more than one `atom:published` element. The `atom:published` element is a [Date](#Glossary) construct indicating when the entry was first created, i.e. when a Trip was originally posted.
+`Atom:entry` elements MUST NOT contain more than one `atom:published` element. The `atom:published` element is a [Date](#glossary) construct indicating when the entry was first created, i.e. when a Trip was originally posted.
 
 
 #### The "atom:updated" Element
   
-`Atom:entry` elements MUST contain exactly one `atom:updated` element. The `atom:updated` element is a [Date](#Glossary) construct indicating the most recent instant in time when a entry was last modified.
+`Atom:entry` elements MUST contain exactly one `atom:updated` element. The `atom:updated` element is a [Date](#glossary) construct indicating the most recent instant in time when a entry was last modified.
 
 
 #### The "opentrip:expires" Element
   
-OpenTrip `atom:entry` elements MUST contain exactly one `opentrip:expires` element. The `opentrip:expires` element is a [Date](#Glossary) construct indicating when a Trip should expire. If the Date provided precedes the current date and time, the entry expires immediately.
+OpenTrip `atom:entry` elements MUST contain exactly one `opentrip:expires` element. The `opentrip:expires` element is a [Date](#glossary) construct indicating when a Trip should expire. If the Date provided precedes the current date and time, the entry expires immediately.
 
 
 #### The "atom:content" Element
@@ -264,22 +264,22 @@ OpenTrip `atom:entry` elements MUST contain exactly one `opentrip:expires` eleme
 
 #### The "opentrip:location" Element
   
-`Atom:entry` elements MUST contain at least one `atom:location` element, and SHOULD contain at least two. This element is a container described in the section [Location Constructs](#Location_Constructs).
+`Atom:entry` elements MUST contain at least one `atom:location` element, and SHOULD contain at least two. This element is a container described in the section [Location Constructs](#location-constructs).
 
 
 #### The "atom:author" Element
   
-`Atom:entry` elements MUST NOT contain more than one `atom:author` element. This element is a container described in the section [Person Constructs](#Person_Constructs).
+`Atom:entry` elements MUST NOT contain more than one `atom:author` element. This element is a container described in the section [Person Constructs](#person-constructs).
 
 
 #### The "opentrip:prefs" Element
   
-`Atom:entry` elements MUST NOT contain more than one `atom:prefs` element. This element is a container described in the section [Preference Constructs](#Preference_Constructs).
+`Atom:entry` elements MUST NOT contain more than one `atom:prefs` element. This element is a container described in the section [Preference Constructs](#preference-constructs).
 
 
 #### The "opentrip:mode" Element
   
-`Atom:entry` elements MAY contain one or more `atom:mode` elements. This element is a container described in the section [Mode Constructs](#Mode_Constructs "wikilink").
+`Atom:entry` elements MAY contain one or more `atom:mode` elements. This element is a container described in the section [Mode Constructs](#mode-constructs).
 
 
 ### Location Constructs
@@ -301,7 +301,7 @@ A location's designation may be overridden by specifying the `point` attribute. 
   <g:point>37.774311 -122.214746</g:point>
   <t:leaves recurs="weekly" days="MTWHF" offset="30">2009-04-01T08:00:00Z</t:leaves>
   <t:returns recurs="weekly" days="MTWHF" offset="30">2009-04-01T18:00:00Z</t:returns>
-  </t:location>
+</t:location>
 ```
 
 
@@ -325,9 +325,9 @@ The following elements use the `opentrip` namespace:
 
 <dl>
   <dt>country</dt>
-  <dd>2-letter country code defined in [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1).</dd>
+  <dd>2-letter country code defined in <a href="http://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1 alpha-2</a>.</dd>
   <dt>region</dt>
-  <dd>State, province, or prefecture. Use abbreviated form used in the second part of [ISO 3166-2](http://en.wikipedia.org/wiki/ISO_3166-2) codes. (i.e. Use 2-letter state abbreviations for states in the United States.)</dd>
+  <dd>State, province, or prefecture. Use abbreviated form used in the second part of <a href="http://en.wikipedia.org/wiki/ISO_3166-2">ISO 3166-2</a> codes. (i.e. Use 2-letter state abbreviations for states in the United States.)</dd>
   <dt>subregion</dt>
   <dd>Full name of county or municipality.</dd>
   <dt>town</dt>
@@ -440,7 +440,7 @@ An `atom:author` element is a Person construct as described in [RFC4287 section 
   <t:phone label="mobile">510-555-1234</t:phone>
   <t:age>25</t:age>
   <t:gender>male</t:gender>
-  </author>
+</author>
 ```
 
 
@@ -464,9 +464,9 @@ Contact elements encode contact information for this person construct.
 
 <dl>
   <dt>atom:email</dt>
-  <dd>The `atom:email` element's content conveys an e-mail address associated with the person. Person constructs MAY contain an `atom:email` element, but MUST NOT contain more than one. Its content MUST conform to the "addr-spec" production in [RFC2822 section 3.4.1](http://tools.ietf.org/html/rfc2822#section-3.4.1).</dd>
+  <dd>The `atom:email` element's content conveys an e-mail address associated with the person. Person constructs MAY contain an `atom:email` element, but MUST NOT contain more than one. Its content MUST conform to the "addr-spec" production in <a href="http://tools.ietf.org/html/rfc2822#section-3.4.1">RFC2822 section 3.4.1</a>.</dd>
   <dt>atom:uri</dt>
-  <dd>The `atom:uri` element's content conveys an IRI associated with the person. Person constructs MAY contain an `atom:uri` element, but MUST NOT contain more than one. The content of `atom:uri` in a Person construct MUST be an IRI reference [RFC3987](http://tools.ietf.org/html/rfc3987).</dd>
+  <dd>The `atom:uri` element's content conveys an IRI associated with the person. Person constructs MAY contain an `atom:uri` element, but MUST NOT contain more than one. The content of `atom:uri` in a Person construct MUST be an IRI reference <a href="http://tools.ietf.org/html/rfc3987">RFC3987</a>.</dd>
   <dt>opentrip:uri</dt>
   <dd>The `opentrip:uri` element's content conveys an IRI associated with the person. Person constructs MAY contain any number of `opentrip:uri` elements. This element is used in the same way as `atom:uri`. Its purpose is to extend `atom:uri` by allowing additional IRIs per Person construct, since the Atom specification only allows at most one `atom:uri` element. `Atom:uri` SHOULD be used first before adding additional URIs using `opentrip:uri`.</dd>
   <dt>opentrip:phone</dt>
@@ -507,7 +507,7 @@ The optional `opentrip:prefs` element is a container that represents trip prefer
   <t:age>18-30</t:age>
   <t:gender>female</t:gender>
   <t:nonsmoking/>
-  </t:prefs>
+</t:prefs>
 ```
 
 
@@ -539,24 +539,24 @@ The optional `opentrip:mode` element is a container that represents additional i
 *  Example of a driver's mode of transportation:
 
     ```xml
-<t:mode kind="auto">
-  <t:cost kind="USD">2.00</t:cost>
-  <t:capacity>2</t:capacity>
-  <t:vacancy>1</t:vacancy>
-  <t:make>Tesla</t:make>
-  <t:model>Roadster</t:model>
-  <t:year>2009</t:year>
-  <t:color>Red</t:color>
-  <t:lic>ABCD123</t:lic>
-  </t:mode>
+    <t:mode kind="auto">
+      <t:cost kind="USD">2.00</t:cost>
+      <t:capacity>2</t:capacity>
+      <t:vacancy>1</t:vacancy>
+      <t:make>Tesla</t:make>
+      <t:model>Roadster</t:model>
+      <t:year>2009</t:year>
+      <t:color>Red</t:color>
+      <t:lic>ABCD123</t:lic>
+    </t:mode>
 ```
 
 *   Example of a passenger's preferred modes of transport:
 
     ```xml
-<t:mode kind="auto"/>
-<t:mode kind="van"/>
-<t:mode kind="bus"/>
+    <t:mode kind="auto"/>
+    <t:mode kind="van"/>
+    <t:mode kind="bus"/>
 ```
 
 
@@ -574,7 +574,7 @@ The following elements are in the `opentrip` namespace:
 
 <dl>
   <dt>cost</dt>
-  <dd>Cost of trip as a real number. Optional `kind` attribute specifies the unit of currency based on the 3-letter codes from [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217). Default currency type is based on the location of trip.</dd>
+  <dd>Cost of trip as a real number. Optional `kind` attribute specifies the unit of currency based on the 3-letter codes from <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a>. Default currency type is based on the location of trip.</dd>
   <dt>capacity</dt>
   <dd>Total capacity of passengers in vehicle.</dd>
   <dt>vacancy</dt>

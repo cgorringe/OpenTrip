@@ -11,7 +11,7 @@ A similar website ending in .org is *not* affiliated with this effort.
 
 ### Status
 
-*The OpenTrip project is no longer in development at this time.*
+***The OpenTrip project is no longer in development at this time.***
 
 A working OpenTrip feed producer, consumer, and search engine was developed for [511.org](http://511.org) in 2009 but was placed on hold. This is the only known working implementation of OpenTrip.
 

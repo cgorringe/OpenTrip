@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>OpenTrip</title>
-	<link href="style.css" rel="stylesheet"></link>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
 	<div class="main">
@@ -154,7 +156,7 @@
 <h4 id="the-atomid-element-1">The &quot;atom:id&quot; Element</h4>
 <p><code>Atom:entry</code> elements MUST contain exactly one <code>atom:id</code> element, which MUST be an IRI as defined by <a href="http://tools.ietf.org/html/rfc3987">RFC3987</a>. See <a href="http://tools.ietf.org/html/rfc4287#section-4.2.6">RFC4287 section 4.2.6</a>. Additionally, the <code>id</code> element at entry level must conform to the following rules:</p>
 <ol>
-<li><p>The id MUST begin with &quot;<a href="urn:guid" class="uri">urn:guid</a>:&quot;</p></li>
+<li><p>The id MUST begin with &quot;urn:guid:&quot;</p></li>
 <li>The next segment MUST be a domain name that uniquely identifies the website providing the feed data. The formation of the domain name MUST follow these rules:
 <ul>
 <li>The chosen domain name SHOULD NOT include subdomains such as &quot;www&quot;, but MAY include subdomains which are part of the website's address. For example, &quot;example.com&quot; or &quot;foobar.example.com&quot; MAY be used, while &quot;www.example.com&quot; SHOULD NOT be used.</li>
@@ -163,7 +165,7 @@
 <li>For testing purposes only, a name such as &quot;test1.example.com&quot; may be chosen, where &quot;example.com&quot; is used literally, since this domain name is reserved for testing purposes. Any of the domain names specified in <a href="http://tools.ietf.org/html/rfc2606">RFC2606</a> may be used for testing purposes.</li>
 </ul></li>
 <li><p>Following the domain name is a colon and a unique Trip ID. The Trip ID SHALL NOT include characters other than letters (A-Za-z), numbers (0-9), dots (.), hyphens (-) and underscores (_).</p></li>
-<li><p>The full length of the id, including the &quot;<a href="urn:guid" class="uri">urn:guid</a>:&quot; prefix, MUST NOT exceed 64 characters.</p></li>
+<li><p>The full length of the id, including the &quot;urn:guid:&quot; prefix, MUST NOT exceed 64 characters.</p></li>
 </ol>
 <p>Example of a valid OpenTrip ID:</p>
 <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;id&gt;</span>urn:guid:example.com:ed52bw8k345<span class="kw">&lt;/id&gt;</span></code></pre></div>
